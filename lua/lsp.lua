@@ -25,6 +25,7 @@ local on_attach = function(_, bufnr)
   vim.cmd [[ command! Format execute 'lua vim.lsp.buf.formatting()' ]]
 end
 
+
 -- Enable the following language servers
 local servers = { 'ansiblels', 'bashls', 'csharp_ls', 'powershell_es', 'tsserver' }
 for _, lsp in ipairs(servers) do
@@ -33,4 +34,10 @@ for _, lsp in ipairs(servers) do
     capabilities = capabilities,
   }
 end
+
+local bp = '~/.config/nvim/powershell-language-server'
+require'lspconfig'.powershell_es.setup{
+  bundle_path = bp,
+}
+
 

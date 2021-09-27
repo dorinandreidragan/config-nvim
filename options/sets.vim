@@ -77,7 +77,7 @@ nnoremap <leader>x :x<CR>
 nnoremap <leader>2 :e ~/.config/nvim/init.vim<CR>
 
 " Source Vim configuration file and install plugins
-nnoremap <leader>1 :source ~/.config/nvim/init.vim \| :PackerInstall<CR>
+nnoremap <leader>1 :source ~/.config/nvim/init.vim \| :PlugInstall <CR>
 
 " Jump through split windows
 nnoremap <leader>h :wincmd h<CR>
@@ -99,4 +99,4 @@ vnoremap <A-k> :m '<-2<CR>gv=gv
  nnoremap <A-l> <C-W>L
 
 " for developing init.vim and options
-nnoremap <leader>nu :w! \| :!cp -f options/* ~/.config/nvim/options \| <CR>
+nnoremap <leader>nu :w! \| :!cp -f options/* ~/.config/nvim/options <CR>
