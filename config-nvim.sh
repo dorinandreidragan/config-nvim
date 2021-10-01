@@ -1,8 +1,8 @@
-# echo "install neovim"
+# echo "intall neovim"
 # sudo add-apt-repository ppa:neovim-ppa/unstable
 # sudo apt-get update
 # sudo apt-get install neovim
-curl -fLo ~/.config/nvim/autoload/plugged/plug.vim --create-dirs \
+curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 echo "Copy init.vim"
@@ -17,3 +17,4 @@ echo "Copy coc-settings.json"
 mkdir -p ~/.config/coc
 cp options/coc-settings.json ~/.config/nvim/
 
+nvim -c 'PlugInstall'
