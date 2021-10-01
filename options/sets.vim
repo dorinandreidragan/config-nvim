@@ -98,5 +98,11 @@ vnoremap <A-k> :m '<-2<CR>gv=gv
  nnoremap <A-k> <C-W>K
  nnoremap <A-l> <C-W>L
 
+" Map for visual block
+nnoremap <leader>ss <C-v>
+
+" Map CR to insert empty line bellow but also move the cursor down
+nnoremap <silent> <CR> :<C-u>call append(line(".")-1, repeat([""], v:count1))<CR>
+
 " for developing init.vim and options
 nnoremap <leader>nu :w! \| :!cp -f options/* ~/.config/nvim/options <CR>

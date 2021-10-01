@@ -6,6 +6,7 @@ call plug#begin('~/.config/nvim/autoload')
 " Themes
 Plug 'tomasiser/vim-code-dark'
 Plug 'hoob3rt/lualine.nvim'
+Plug 'lukas-reineke/indent-blankline.nvim'
 
 " CoC plugin
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -21,8 +22,14 @@ Plug 'tpope/vim-commentary'
 " Hihglight other uses of the current word under the cursor
 Plug 'rrethy/vim-illuminate'
 
-"" Dev Icons
+" Dev Icons
 Plug 'kyazdani42/nvim-web-devicons'
+
+" Tree
+Plug 'kyazdani42/nvim-tree.lua'
+
+" Git
+Plug 'lewis6991/gitsigns.nvim'
 
 call plug#end()
 
@@ -33,3 +40,8 @@ source ~/.config/nvim/options/lualine.vim
 source ~/.config/nvim/options/telescope.vim
 source ~/.config/nvim/options/coc-options.vim
 source ~/.config/nvim/options/coc-extensions.vim
+
+lua require('nvim-tree-setup')
+source ~/.config/nvim/options/nvim-tree.vim
+
+lua require('gitsigns-setup')
