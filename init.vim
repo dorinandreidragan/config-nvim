@@ -45,3 +45,5 @@ lua require('nvim-tree-setup')
 source ~/.config/nvim/options/nvim-tree.vim
 
 lua require('gitsigns-setup')
+
+lua require('indent-blankline-setup')
