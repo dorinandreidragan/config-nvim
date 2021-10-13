@@ -9,7 +9,7 @@ set noshowmode
 set completeopt=menuone,noinsert,noselect
 
 set nu
-set relativenumber
+" set relativenumber
 set cursorline
 set cursorcolumn
 
