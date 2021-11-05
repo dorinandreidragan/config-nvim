@@ -31,6 +31,9 @@ Plug 'kyazdani42/nvim-tree.lua'
 " Git
 Plug 'lewis6991/gitsigns.nvim'
 
+" Markdown preview
+Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
+
 call plug#end()
 
 " source custom configuration
