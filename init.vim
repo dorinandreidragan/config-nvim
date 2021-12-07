@@ -45,9 +45,23 @@ source ~/.config/nvim/options/telescope.vim
 source ~/.config/nvim/options/coc-options.vim
 source ~/.config/nvim/options/coc-extensions.vim
 
-lua require('nvim-tree-setup')
+" nvim-tree
+lua require('nvim-tree').setup()
 source ~/.config/nvim/options/nvim-tree.vim
 
+" telescope
+lua require('telescope-setup')
+
+" cmp
+" TODO: figure out what `cmp_nvim_lsp` is
+" lua require('cmp-setup')
+
+" treesitter
+" TODO: have to figure out what `nvim-treesitter.configs` is
+" lua require('treesitter-setup')
+
+" gitsigns
 lua require('gitsigns-setup')
 
+" indent-blankline
 lua require('indent-blankline-setup')
