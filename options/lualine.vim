@@ -1,1 +1,1 @@
-lua require'lualine'.setup { options = { theme = dark_code } }
+lua require'lualine'.setup { options = { theme = 'gruvbox_dark' } }

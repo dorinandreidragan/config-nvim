@@ -1,11 +1,12 @@
 set nocompatible
 filetype off
+set clipboard+=unnamedplus
 
 call plug#begin('~/.config/nvim/autoload')
 
 " Themes
 Plug 'tomasiser/vim-code-dark'
-Plug 'hoob3rt/lualine.nvim'
+Plug 'nvim-lualine/lualine.nvim'
 Plug 'lukas-reineke/indent-blankline.nvim'
 
 " CoC plugin
