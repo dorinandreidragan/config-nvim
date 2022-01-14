@@ -11,5 +11,3 @@ cp -r lua ~/.config/nvim/
 
 echo "Copy coc-settings.json"
 cp options/coc-settings.json ~/.config/nvim/
-
-nvim -c 'PlugInstall'
