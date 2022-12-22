@@ -1,0 +1,14 @@
+#!/bin/bash
+
+set -e
+
+cp -r nvim ~/.config/
+
+# start and stop nvim to enable Packer
+nvim --headless -c "q"
+
+# start and stop headless to PackerSync
+nvim --headless -c 'autocmd User PackerComplete quitall' -c 'PackerSync'
+
+# start and stop headless to PackerSync
+nvim --headless -c 'autocmd User PackerComplete quitall' -c 'PackerSync'

@@ -1,23 +1,27 @@
-# Introduction
+# Config NeoVim
 
-In order to configure NeoVim on your system you have to:
+To configure NeoVim:
 
-- Install prerequisites
+- Install NeoVim
 
-```bash
-./install-prerequisites.sh
-```
+    ```bash
+    sudo apt install neovim
+    ```
 
-- Run the configuration script for NeoVim
+- Run the configuration script
 
-```bash
-./config-nvim.sh
-```
+    ```bash
+    ./config
+    ```
 
-- Open NeoVim with `nvim` and run `:PlugInstall`
+- You can clean up everything with:
 
-## TODO
+    ```bash
+    ./cleanup
+    ```
 
-Move plugins to lua
+## Credits
 
-This structure is nice but is tooooo much: [https://github.com/alpha2phi/dotfiles](https://github.com/alpha2phi/dotfiles)
+A lot of the lua configuration is taken from [The Primeagen's init.lua](https://github.com/ThePrimeagen/init.lua.git).
+
+There are however personal customizations for my taste.
