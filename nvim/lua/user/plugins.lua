@@ -65,7 +65,15 @@ return packer.startup(function(use)
       }
   }
 
-  -- markdown plugins
+  -- comment plugin
+  use {
+      'numToStr/Comment.nvim',
+      config = function()
+          require('Comment').setup()
+      end
+  }
+
+  -- markdown plugin
   use({
       "iamcco/markdown-preview.nvim",
       run = function() vim.fn["mkdp#util#install"]() end,
