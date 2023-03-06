@@ -79,6 +79,9 @@ return packer.startup(function(use)
       run = function() vim.fn["mkdp#util#install"]() end,
   })
 
+  -- clipboard
+  use('roxma/vim-tmux-clipboard')
+
   use {
 	  'VonHeikemen/lsp-zero.nvim',
 	  requires = {
