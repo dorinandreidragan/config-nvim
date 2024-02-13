@@ -2,6 +2,12 @@
 
 set -e
 
+# make sure that packer is installed
+rm -rf ~/.local/share/nvim/site/pack/packer/start/packer.nvim
+
+git clone --depth 1 https://github.com/wbthomason/packer.nvim\
+ ~/.local/share/nvim/site/pack/packer/start/packer.nvim
+
 cp -r nvim ~/.config/
 
 # start and stop nvim to enable Packer
